@@ -5,7 +5,7 @@ networks:
     start_block: 0
     contracts:
       - name: ERC20
-        address: "0x7EeCA4205fF31f947EdBd49195a7A88E6A91161B" #HONEY
+        address: "0xB734c264F83E39Ef6EC200F99550779998cC812d" #MIM
         handler: src/EventHandlers.ts
         events:
           - event: "Approval(address indexed owner, address indexed spender, uint256 value)"
