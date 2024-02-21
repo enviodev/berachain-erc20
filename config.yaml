@@ -1,0 +1,18 @@
+name: erc20indexer
+description: ERC-20 indexer
+networks:
+  - id: 80085 # Berachain Artio Testnet
+    start_block: 0
+    contracts:
+      - name: ERC20
+        address: "0x7EeCA4205fF31f947EdBd49195a7A88E6A91161B" #HONEY
+        handler: src/EventHandlers.ts
+        events:
+          - event: "Approval(address indexed owner, address indexed spender, uint256 value)"
+            requiredEntities:
+              - name: "Account"
+              - name: "Approval"
+          - event: "Transfer(address indexed from, address indexed to, uint256 value)"
+            requiredEntities:
+              - name: "Account"
+              - name: "Approval"
