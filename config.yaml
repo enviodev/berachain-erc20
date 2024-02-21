@@ -1,11 +1,11 @@
-name: erc20indexer
+name: weth-berachain-indexer
 description: ERC-20 indexer
 networks:
   - id: 80085 # Berachain Artio Testnet
     start_block: 0
     contracts:
       - name: ERC20
-        address: "0xB734c264F83E39Ef6EC200F99550779998cC812d" #MIM
+        address: "0x8239FBb3e3D0C2cDFd7888D8aF7701240Ac4DcA4" #WETH
         handler: src/EventHandlers.ts
         events:
           - event: "Approval(address indexed owner, address indexed spender, uint256 value)"

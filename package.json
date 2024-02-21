@@ -1,5 +1,5 @@
 {
-  "name": "My Envio Indexer",
+  "name": "weth-berachain-indexer",
   "version": "0.1.0",
   "scripts": {
     "clean": "tsc --clean",
